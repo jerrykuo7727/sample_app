@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= full_title(yield(:title)) %></title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    "https://fonts.googleapis.com/earlyaccess/cwtexhei.css",
-                                media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag    'application', media: 'all',
-                                              'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= render 'layouts/shim' %>
-  </head>
+  <%= render 'layouts/head' %>
   <body>
     <%= render 'layouts/header' %>
     <div class="container">
