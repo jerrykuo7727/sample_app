@@ -1,4 +1,4 @@
-Sample Application
+# Sample Application
 
 A sample application built with Rails and Bootstrap, following [Michael Hartl's RoR Chapter](https://www.railstutorial.org/book).
 
