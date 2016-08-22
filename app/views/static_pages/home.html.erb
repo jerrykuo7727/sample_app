@@ -1,16 +1,13 @@
-<div class="center jumbotron">
+<div class="center jumbotron" style="clear:both">
   <h1>歡迎來到樣品App</h1>
 
   <h2>
-    這裡是
-    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    樣品應用程式的首頁。
+    這裡是 Ruby on Rails 樣品應用程式的首頁。
   </h2>
-
-  <%= link_to "現在註冊！", '#', class: "btn btn-lg btn-primary" %>
+  <div style="margin-bottom: 30px;">
+    <%= link_to "現在註冊！", signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+  <%= image_tag("kitten.jpg", alt: "小貓照片") %>
 </div>
 
-<%= link_to image_tag("rails.png", alt: "Rails徽標"),
-            'http://rubyonrails.org/' %>
-<%#= image_tag("kitten.jpg", alt: "小貓照片") %>
 
