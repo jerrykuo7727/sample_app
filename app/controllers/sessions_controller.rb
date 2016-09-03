@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       # Log the user in and redirect to the user's show page.
     else
-      flash[:danger] = '錯誤的電子信箱或密碼' # Not quite right
+      flash.now[:danger] = '錯誤的電子信箱或密碼'
       render 'new'
     end
   end
