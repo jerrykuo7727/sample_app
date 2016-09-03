@@ -5,9 +5,11 @@
   <h2>
     這裡是 Ruby on Rails 樣品應用程式的首頁。
   </h2>
-  <div style="margin-bottom: 30px;">
-    <%= link_to "現在註冊！", signup_path, class: "btn btn-lg btn-primary" %>
-  </div>
+  <% unless logged_in? %>
+    <div style="margin-bottom: 30px;">
+      <%= link_to "現在註冊！", signup_path, class: "btn btn-lg btn-primary" %>
+    </div>
+  <% end %>
   <%= image_tag("kitten.jpg", alt: "小貓照片") %>
 </div>
 
