@@ -11,6 +11,11 @@
       <%= f.label :password, "密碼" %>
       <%= f.password_field :password, class: 'form-control' %>
 
+      <%= f.label :remember_me, class: "checkbox inline" do %>
+        <%= f.check_box :remember_me %>
+        <span>記住我</span>
+      <% end %>
+
       <%= f.submit "登入", class: "btn btn-primary" %>
     <% end %>
 
