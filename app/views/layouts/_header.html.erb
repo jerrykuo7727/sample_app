@@ -13,7 +13,7 @@
             </a>
             <ul class="dropdown-menu">
               <li><%= link_to "用戶資料", current_user %></li>
-              <li><%= link_to "設定", current_user %></li>
+              <li><%= link_to "編輯帳號", edit_user_path(current_user) %></li>
               <li class="divider"></li>
               <li>
                 <%= link_to "登出", logout_path, method: "delete" %>
