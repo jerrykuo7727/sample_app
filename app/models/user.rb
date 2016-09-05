@@ -42,7 +42,7 @@ class User < ApplicationRecord
 
   # Activates an account
   def activate
-    user.update_columns(activated: true,
+    self.update_columns(activated: true,
                         activated_at: Time.zone.now)
   end
 
