@@ -1,5 +1,8 @@
-<h1>User#account_activation</h1>
+<h1>樣本App</h1>
 
-<p>
-  <%= @greeting %>, find me in app/views/user_mailer/account_activation.html.erb
-</p>
+<p>您好，<%= @user.name %></p>
+
+<p>歡迎您加入樣本App！請點擊以下連結來驗證您的帳號：</p>
+
+<%= link_to "點此驗證您的帳號", edit_account_activation_url(@user.activation_token,
+                                                         email: @user.email) %>
