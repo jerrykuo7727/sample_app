@@ -20,7 +20,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       @user.send_activation_email
-      flash[:info] = "請至您的電子信箱收取驗證信"
+      flash[:info] = "請至您的電子信箱收取帳號驗證信"
       redirect_to root_url
     else
       render 'new'

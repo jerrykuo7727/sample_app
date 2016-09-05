@@ -8,10 +8,10 @@ class PasswordResetsController < ApplicationController
     if @user
       @user.create_reset_digest
       @user.send_password_reset_email
-      flash[:info] = "密碼重置信已發送至電子信箱"
+      flash[:info] = "請至您的電子信箱收取密碼重置信"
       redirect_to root_url
     else
-      flash.now[:danger] = "此電子信箱尚未註冊"
+      flash.now[:danger] = "此電子信箱尚未被註冊"
       render 'new'
     end
   end
