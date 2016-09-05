@@ -47,6 +47,7 @@ class UsersController < ApplicationController
     #Confirms a logged-in user.
     def logged_in_user
       unless logged_in?
+        store_location
         flash[:danger] = "請先登入帳號"
         redirect_to login_url
       end
