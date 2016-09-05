@@ -26,7 +26,8 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(user_params)
-      # Handle successful
+      flash[:success] = "資料更新成功！"
+      redirect_to @user
     else
       render 'edit'
     end
