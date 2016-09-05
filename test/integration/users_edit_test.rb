@@ -29,6 +29,6 @@ class UsersEditTest < ActionDispatch::IntegrationTest
     assert_redirected_to @user
     @user.reload
     assert_equal name,  @user.name
-    assert_euqal email, @user.email
+    assert_equal email, @user.email
   end
 end
