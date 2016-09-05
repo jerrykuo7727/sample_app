@@ -9,6 +9,7 @@
       <%= f.email_field :email, class: 'form-control' %>
 
       <%= f.label :password, "密碼" %>
+      <%= link_to " （忘記密碼？）", new_password_reset_path %>
       <%= f.password_field :password, class: 'form-control' %>
 
       <%= f.label :remember_me, class: "checkbox inline" do %>
@@ -19,6 +20,6 @@
       <%= f.submit "登入", class: "btn btn-primary" %>
     <% end %>
 
-    <p>還沒有帳號？ <%= link_to "註冊 ", signup_path %></p>
+    <p>還沒有帳號？ <%= link_to "現在註冊！", signup_path %></p>
   </div>
 </div>
